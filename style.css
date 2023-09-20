@@ -1,0 +1,96 @@
+li{
+  list-style:none
+}
+
+.header-logo{
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.potepan{
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
+  background-position: right;
+  background-size: 100%;
+  height: 500px;
+}
+
+.header-list{
+  display: flex;
+  
+}
+
+.koumoku{
+  display: flex;
+  gap:60px;
+  font-weight: bold;
+  text-align: center;
+  font-size:13px;
+  margin-left: auto;
+  color:black;
+  }
+  
+a:hover{
+  opacity: 0.5 ;
+}
+
+.small{
+  font-size: 10px;
+  color: black;
+}
+
+.freebutton{
+  color:white;
+  background-color: orange;
+  text-decoration: none;
+  padding:15px;
+  border-radius: 80px;
+  
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.top{
+  margin-left: 150px;
+}
+
+.picture-a{
+  margin-left: 100px;
+}
+
+.picture-b{
+  margin-left: 190px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.fooder-list{
+  font-size: 4px;
+  color:#a9a9a9;
+  margin-left: 150px;
+  margin-top: 5px;
+}
+
+.howtopotepan{
+  margin-left: 150px;
+}
+
+.video{
+  width: 30%;
+  margin-left: 90px;
+}
+
+.foooder{
+  display: flex;
+  background-color: orange;
+  color: white;
+}
+
+.fish{
+  letter-spacing:5px;
+}
+p.keizai img {
+width: 150px;
+}
