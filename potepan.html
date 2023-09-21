@@ -4,13 +4,18 @@
      <meta charset="utf-8">
      <title>サイト模写</title>
      <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width=device-width,initial-scale=1">
    </head>
  
    <body>
+    <div class="tori">
      <div class="potepan">
+      <header class="c-header c-hamburger-menu">
       <div class="header-list">
       <div class="header-logo"><img src=https://mng-camp.potepan.com/_nuxt/img/service-logo.9c27004.svg alt="potepan"></div>
-       <ul class="koumoku">
+      <input type="checkbox" name="hamburger" id="hamburger" class="c-hamburger-menu__input"/><!-- 追記 idはlabelのforと同じにする -->
+  <label for="hamburger" class="c-hamburger-menu__bg"></label><!-- 追記 ハンバーガーメニュを開いた時の背景 -->
+       <ul class="koumoku c-hamburger-menu__list">
           <li><a href="https://camp.potepan.com/content">CONTENT<br><span class="small">学習内容</span></a></li>
           <li><a href="https://camp.potepan.com/interview">INTERVEW<br><span class="small">受講生の声</span></a></li>
           <li><a href=https://camp.potepan.com/faq>FAQ<br><span class="small">よくある質問</span></a></li>
@@ -18,10 +23,16 @@
           <li><a href="https://camp.potepan.com/download">DOCUMENT<br><span class="small">資料請求</span></a></li>
           <li><a class="freebutton" href="https://camp.potepan.com/contact">無料カウンセリング</a></li>
         </ul>
+        <label for="hamburger" class="c-hamburger-menu__button"><!-- 追記 ハンバーガーメニューのボタン -->
+        <span class="c-hamburger-menu__button-mark"></span>
+        <span class="c-hamburger-menu__button-mark"></span>
+        <span class="c-hamburger-menu__button-mark"></span>
+       </label>
+       </header>
         
       </div>
       
-     
+     <div class="inter">
       <h1 class="top">確かな学びと求人が揃う<br>ITエンジニアスクール</h1>
       <div class="picture-a">
         <img src=https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/100percent@2x.svg alt="転職">
@@ -36,6 +47,8 @@
           <li>※2: 29歳以下の転職サポート実施ユーザ（2021年7月~10月）</li>
           <li>※3: 返金の条件については利用規約をご参照ください</li>
       </div>
+      </div>
+    </div>
     </div>
     <div class="foooder">
      <video class="video" src="https://res.cloudinary.com/he3zvdcui/video/upload/v1684818240/IntroductionMovie/movie_l2rbjz.mp4" autoplay></video>
