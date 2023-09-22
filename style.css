@@ -59,6 +59,8 @@ li{
 
  .top{
   margin-left: 150px;
+  margin-left: auto;
+  margin-top: 0px;
  }
 
   .picture-a{
@@ -106,13 +108,75 @@ li{
 
 
   @media (max-width: 768px){
+  
+  .header-list{
+      width: 100%;
+      position: fixed !important;
+      background-color: #fff;
+    z-index: 10;
+  }
+  
+  
+  .header-logo{
+  margin-top: 10px;
+  margin-left: 10px;
+  }
+
   .inter{
    background-image: url("https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero-sp.jpg.webp");
-   background-size: 100%;
-   background-position: center;
-   background-repeat: no-repeat
-   min-height:80vh;
+   width: 100%;
+   background-size: contain;
+   background-repeat: no-repeat;
+   
   }
+  
+  .top{
+      padding-top: 290px;
+      box-sizing: border-box;
+  }
+ .picture-a{
+   justify-content: space-between;
+    margin-bottom: 30px;
+    margin-left: 0px;
+    display: flex;
+    width: 100%;
+ }
+ .picture-a img{
+   width: 27.5%;
+ }
+ .picture-a img:nth-of-type(2){
+   width: 40%;
+ }
+
+
+.picture-b{
+  margin-left: 70px;
+}
+
+.fooder-list{
+  margin-left: 10px;
+}
+  
+.foooder{
+  display: block;
+  margin-top: 210px;
+}
+
+.video {
+    width: 100%;
+    margin-top: 5px;
+    max-width: 80%;
+    margin-left: 43px;
+}
+
+.howtopotepan{
+  margin-left:0px;
+}
+
+.keizai{
+  margin-left: 100px;
+}
+  
    
    .c-hamburger-menu__list {
     background-color: #eeeeee; /* カスタマイズしてください */
@@ -199,15 +263,8 @@ li{
     transform: translate(2px, 3px) rotate(-45deg); /* カスタマイズしてください */
     transform-origin: 0%; /* カスタマイズしてください */
   }
-  .top{
-   margin-left: auto;
-   margin-top: 50px;
-  }
+ 
   
- .picture-a{
-   display:flex;
-   margin-left: 0px
- }
 }
   
   
