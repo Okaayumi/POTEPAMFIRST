@@ -1,7 +1,49 @@
 
-li{
-  list-style:none
+body {
+    color: #333;
+    font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    margin: 0px;
+    padding:0px;
 }
+
+header {
+    display: block;
+}
+.Header {
+    width: 100%;
+    position: absolute;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    word-break: break-all;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.HeaderNavList {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Lato',sans-serif;
+    
+}
+
+
+
+ul{
+  list-style:none;
+  box-sizing: border-box;
+}
+
+li {
+    display: list-item;
+    margin-right: 45px;
+}
+
+
 
 .c-hamburger-menu {
   position: relative;
@@ -11,16 +53,20 @@ li{
   margin-left: 40px;
  }
 
- .tori{
-  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 500px;
- }
+ .FirstView {
+    background-image: url(//camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 28px;
+}
 
 .header-list{
   display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  max-width: 100%;
+  position: relative;
   
  }
 
@@ -57,10 +103,15 @@ li{
   color: black;
  }
 
+ 
  .top{
-  margin-left: 150px;
-  margin-left: auto;
-  margin-top: 0px;
+    margin-left: 150px;
+    color: #333;
+    font-family: "Lato",sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 54px;
+    margin-bottom: 15px;
  }
 
   .picture-a{
@@ -80,40 +131,122 @@ li{
   margin-top: 5px;
 }
 
+
 .howtopotepan{
   margin-left: 150px;
 }
 
 .video{
-  width: 30%;
-  margin-left: 90px;
+  width: 50%;
 }
 
 .foooder{
-  display: flex;
-  background-color: orange;
-  color: white;
+  background-color: #f79214;
+  padding: 44px 0;
+}
+
+.about {
+    max-width:1500px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    align-items: center;
+    display:flex;
+    justify-content: space-between;
 }
 
 .fish{
-  letter-spacing:5px;
+  font-family: 'Lato',sans-serif;
+  font-size: 38px;
+  color: white;
  }
+ 
+ .small_fish{
+   font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 24px;
+    color:white;
+
+ }
+ 
+ 
  p.keizai img {
  width: 150px;
  }
  
- .c-hamburger-menu {
-  position: relative;
+
+
+@media screen and (max-width: 1080px){
+ .Header{
+  background-color: #fff;
+  z-index: 10;
+ }
+ .Header--common {
+    position: fixed !important;
+}
+ .HeaderNavHamburger {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 21px;
+    z-index: 100;
+    margin-right: 30px;
+  }
+  .HeaderNavList {
+    overflow-y: scroll;
+    position: fixed;
+    top: 60px;
+    left: 100%;
+    width: 100%;
+    display: block;
+    transition: transform .5s;
+    z-index: 99;
+    background-color: rgba(0,0,0,.8);
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+    
+   
 }
 
+.HeaderNavHamburger_line:first-child {
+    top: 0;
+}
+.HeaderNavHamburger_line {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    transform: translate(0,-50%);
+    border-radius: 10px;
+    transition: top .2s,transform .2s,opacity .3s;
+ }
+.HeaderNavHamburger_line:last-child {
+    top: 100%;
+}
+
+.about {
+    flex-direction: column;
+}
 
   @media (max-width: 768px){
+  br {
+    display: none;
+  }
+    
+  .Header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
   
   .header-list{
-      width: 100%;
-      position: fixed !important;
-      background-color: #fff;
-    z-index: 10;
+      max-width: 100%;
+   
   }
   
   
@@ -121,18 +254,28 @@ li{
   margin-top: 10px;
   margin-left: 10px;
   }
-
+  .FirstView {
+    background-image: none;
+    padding-top: 10px;
+    padding-bottom: 35px;
+}
+.FirstView_main-image-sp {
+    display: block;
+}
   .inter{
    background-image: url("https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero-sp.jpg.webp");
    width: 100%;
    background-size: contain;
    background-repeat: no-repeat;
+  
    
   }
   
   .top{
       padding-top: 290px;
       box-sizing: border-box;
+      margin-left: 0px;
+      
   }
  .picture-a{
    justify-content: space-between;
@@ -159,7 +302,8 @@ li{
   
 .foooder{
   display: block;
-  margin-top: 210px;
+  margin-top: 0px;
+
 }
 
 .video {
@@ -167,6 +311,7 @@ li{
     margin-top: 5px;
     max-width: 80%;
     margin-left: 43px;
+    margin-right: 20px
 }
 
 .howtopotepan{
@@ -175,94 +320,12 @@ li{
 
 .keizai{
   margin-left: 100px;
+  padding-right: 100px;
+
+}
+
 }
   
-   
-   .c-hamburger-menu__list {
-    background-color: #eeeeee; /* カスタマイズしてください */
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    left: 0;
-    padding: 2rem; /* カスタマイズしてください */
-    position: absolute;
-    transform: translateX(-100%);
-    transition: 0.3s; /* カスタマイズしてください */
-    top: 100%;
-    width: 100%;
-  }
-   #hamburger:checked ~ .c-hamburger-menu__list {
-    transform: translateX(0%);
-    transition: 0.3s;
-  }
-}
-
-.c-hamburger-menu__input {
-  display: none;
-}
-
-.c-hamburger-menu__bg {
-  background-color: #000; /* カスタマイズしてください */
-  cursor: pointer;
-  display: none;
-  height: 100vh;
-  left: 0;
-  opacity: 0.4; /* カスタマイズしてください */
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: -1;
-}
-#hamburger:checked ~ .c-hamburger-menu__bg {
-  display: block;
-}
-
-.c-hamburger-menu__button {
-  display: none;
-}
-
-@media screen and (max-width: 750px) {
-  .c-hamburger-menu__button {
-    align-items: center;
-    appearance: none;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    gap: 5px; /* カスタマイズしてください */
-    height: 32px; /* カスタマイズしてください */
-    justify-content: center;
-    width: 32px; /* カスタマイズしてください */
-  }
-}
-.c-hamburger-menu__button-mark {
-  background-color: #000; /* カスタマイズしてください */
-  display: block;
-  height: 1px; /* カスタマイズしてください */
-  transition: 0.3s; /* カスタマイズしてください */
-  width: 20px; 
-  margin-left: 300px;/* カスタマイズしてください */
-}
-
-@media screen and (max-width: 750px) {
-  #hamburger:checked
-    ~ .c-hamburger-menu__button
-    .c-hamburger-menu__button-mark:nth-of-type(1) {
-    transform: translate(2px, 1px) rotate(45deg); /* カスタマイズしてください */
-    transform-origin: 0%; /* カスタマイズしてください */
-  }
-  #hamburger:checked
-    ~ .c-hamburger-menu__button
-    .c-hamburger-menu__button-mark:nth-of-type(2) {
-    opacity: 0;
-  }
-  #hamburger:checked
-    ~ .c-hamburger-menu__button
-    .c-hamburger-menu__button-mark:nth-of-type(3) {
-    transform: translate(2px, 3px) rotate(-45deg); /* カスタマイズしてください */
-    transform-origin: 0%; /* カスタマイズしてください */
-  }
  
   
 }
