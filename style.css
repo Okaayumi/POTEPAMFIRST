@@ -59,6 +59,7 @@ li {
     background-position: center;
     padding-top: 100px;
     padding-bottom: 28px;
+    
 }
 
 .header-list{
@@ -235,9 +236,7 @@ li {
 }
 
   @media (max-width: 768px){
-  br {
-    display: none;
-  }
+  
     
   .Header {
     padding-top: 15px;
@@ -268,13 +267,20 @@ li {
    background-size: contain;
    background-repeat: no-repeat;
   
+  
    
+  }
+  
+  .saitan{
+    text-align: center;
   }
   
   .top{
       padding-top: 290px;
       box-sizing: border-box;
       margin-left: 0px;
+      line-height:20px;
+     
       
   }
  .picture-a{
@@ -324,7 +330,14 @@ li {
 
 }
 
+.saitan{
+  font-size: 28px;
+  text-align: center;
+
 }
+
+}
+
   
  
   
