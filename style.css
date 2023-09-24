@@ -278,7 +278,7 @@ li {
   .top{
       padding-top: 290px;
       box-sizing: border-box;
-      margin-left: 10px;
+      margin-left: 25px;
       line-height:20px;
      
       
@@ -331,7 +331,7 @@ li {
 }
 
 .saitan{
-  font-size: 28px;
+  font-size: 25px;
   text-align: center;
 
 }
