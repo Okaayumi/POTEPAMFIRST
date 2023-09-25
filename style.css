@@ -12,6 +12,13 @@ body {
 header {
     display: block;
 }
+
+h2{
+ margin:0;
+ padding:0;
+}
+
+
 .Header {
     width: 100%;
     position: absolute;
@@ -20,7 +27,7 @@ header {
     
 }
 
-.HeaderLogo__image--pc {
+.HeaderLogo_image--pc {
     display: block;
     height: 20px;
     width: auto;
@@ -107,6 +114,10 @@ li {
 nav{
     display: block;
     
+}
+
+div{
+    padding:0;
 }
 
 
@@ -288,6 +299,18 @@ h2 {
  .About__reskilling-logo>img {
     width: 158px;
 }
+
+.HeaderLogo__image--pc {
+    display: block;
+    height: 20px;
+    width: auto;
+}
+
+ .HeaderLogo__image--sp {
+    display: none;
+    height: 16px;
+    width: auto;
+}
  
 
 
@@ -296,6 +319,8 @@ h2 {
   background-color: #fff;
   z-index: 10;
  }
+ 
+
  .Header--common {
     position: fixed !important;
 }
@@ -342,6 +367,10 @@ h2 {
     top: 100%;
 }
 
+main {
+    padding-top: 60px;
+}
+
 .About {
     flex-direction: column;
 }
@@ -360,13 +389,7 @@ h2 {
     margin: auto;
 }
 
- .FirstView {
-    background-size: cover;
-    background-position:center;
-    padding-top: 100px;
-    padding-bottom: 28px;
-    
-}
+ 
 
 
 }
@@ -419,7 +442,8 @@ main {
     line-height: 36px;
     margin-left: calc(((100vw - 100%)/2)*-1);
     margin-right: calc(((100vw - 100%)/2)*-1);
-    width: 400px;
+    width: -webkit-fill-available;
+    
 }
 
 .FirstView_Content_images img {
@@ -470,5 +494,12 @@ main {
 .About_title h2 span {
     letter-spacing: 1px;
 }
+
+.First_ViewContent_images img {
+    width: 27.5%;
   }
   
+.First_ViewContent_images img:nth-of-type(2) {
+    width: 40%;
+}
+  }
